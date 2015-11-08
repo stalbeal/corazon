@@ -1,0 +1,31 @@
+<script>
+	$(document).ready(function() {
+		if($('#valid').val()){
+			$("#my_audio2").get(0).play();
+		}
+	
+	});
+</script>
+<div class="container">
+	<audio id="my_audio2" loop>
+		<source src="/sound/ay_vamos.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<% if(answer.valid) {%>
+	<div id="accueil3">
+		<h1><%=answer.question1%></h1>
+		<h2>EL dia <u> <%=answer.question2%></u> de mayo de 2014 tome una de las mejores decisiones de mi vida. Antes de conocerte pensaba que todo mi mundo ya esta definido y que cada una de las espectativas y sueños que tenia en mente colmarian mi vida para simpre. En la parte sentimental creia que ya la vida ya me habia enseñado demasiadas espinas, que lo que la gente llamaba amor
+		no existia solo era una simple percepcion de la mente; pero sin pensarlo ni desearlo entraste a mi vida la cual hoy colmas de amor y ahora despues de  <u><%=answer.question4%></u> meses no puedo ver ni un segundo, ni una accion que no quiera realizar bajo la luz de tu amor y la cercania de tu corazon. Te AMO ATT:  <u><%=answer.question3%></u>
+		</h2>
+		<h2><a href="/">Volver</a></h2>
+		<input id="valid" type="hidden" name="" value="<%=answer.valid%>">
+	</div>
+	<%}else {%>
+	<div id="accueil3">
+		<h1><%=answer.question1%></h1>
+		<h2>NO eres la dueña de mi corazon, ya que no sabes el camino basico a el.
+		</h2>
+		<h2><a href="/">Volver</a></h2>
+	</div>
+	<%}%>
+</div>

@@ -1,0 +1,132 @@
+<script >
+$(document).ready(function() {
+$("#my_audio").get(0).play();
+}); </script>
+<audio id="my_audio" loop >
+  <source src="/sound/quisiera.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<div id="accueil">
+  <h1>My Heart is </h1>
+  <h2>and always will be yours</h2>
+</div>
+<div id="gallery">
+  <figure class="col-md-3 col-sm-3 col-xs-12 ">
+    <a href="#">
+      <img class="img" src="/images/1.jpg" height="310" width="310" alt="" />
+      <figcaption>
+      <h2>Contigo las Noches</h2>
+      <p>son magicas</p>
+      </figcaption>
+    </a>
+  </figure>
+  <figure class="col-md-3 col-sm-3 col-xs-12 ">
+    <a href="#">
+      <img class="img" src="/images/3.jpg" height="310" width="310" alt="" />
+      <figcaption>
+      <h2>Por Los</h2>
+      <p>Comienzos Inexperados</p>
+      </figcaption>
+    </a>
+  </figure>
+  <figure class="col-md-3 col-sm-3 col-xs-12 ">
+    <a href="#">
+      <img class="img" src="/images/2.jpg" height="310" width="310" alt="" />
+      <figcaption>
+      <h2>Por que </h2>
+      <p>Tu risa Enamora</p>
+      </figcaption>
+    </a>
+  </figure>
+  <figure class="col-md-3 col-sm-3 col-xs-12 ">
+    <a href="#">
+      <img class="img" src="/images/4.jpg" height="310" width="310" alt="" />
+      <figcaption>
+      <h2>A tu Lado</h2>
+      <p>Todo Es real</p>
+      </figcaption>
+    </a>
+  </figure>
+  <figure class="col-md-3 col-sm-3 col-xs-12 ">
+    <a href="#">
+      <img class="img" src="/images/5.jpg" height="310" width="310" alt="" />
+      <figcaption>
+      <h2>Contigo cada Momento</h2>
+      <p>Tiene luz propia</p>
+      </figcaption>
+    </a>
+  </figure>
+  <figure class="col-md-3 col-sm-3 col-xs-12 ">
+    <a href="#">
+      <img class="img" src="/images/6.jpg" height="310" width="310" alt="" />
+      <figcaption>
+      <h2>Por Que</h2>
+      <p>Me aceptas como soy</p>
+      </figcaption>
+    </a>
+  </figure>
+  <figure class="col-md-3 col-sm-3 col-xs-12 ">
+    <a href="#">
+      <img class="img" src="/images/7.jpg" height="320" width="320" alt="1" />
+      <figcaption>
+      <h2>Y es que Tienes</h2>
+      <p>Una Ternura Que Enloquece</p>
+      </figcaption>
+    </a>
+  </figure>
+  <figure class="col-md-3 col-sm-3 col-xs-12 ">
+    <a href="#">
+      <img class="img" src="/images/8.jpg" height="310" width="310" alt="" />
+      <figcaption>
+      <h2>Te has Convertido</h2>
+      <p>En mi amiga, Amante y Compañera</p>
+      </figcaption>
+    </a>
+  </figure>
+  <figure class="col-md-3 col-sm-3 col-xs-12 ">
+    <a href="#">
+      <img class="img" src="/images/9.jpg" height="310" width="310" alt="" />
+      <figcaption>
+      <h2>Tus Ojitos</h2>
+      <p>Me llenan de Luz</p>
+      </figcaption>
+    </a>
+  </figure>
+  <figure class="col-md-3 col-sm-3 col-xs-12 ">
+    <a href="#">
+      <img class="img" src="/images/10.jpg" height="310" width="310" alt="" />
+      <figcaption>
+      <h2>Nunca Espere</h2>
+      <p>Que llegaras a Revolcar mi mundo</p>
+      </figcaption>
+    </a>
+  </figure>
+  <figure class="col-md-3 col-sm-3 col-xs-12 ">
+    <a href="#">
+      <img class="img" src="/images/11.jpg" height="310" width="310" alt="" />
+      <figcaption>
+      <h2>Y es Que</h2>
+      <p>Hay millones de motivos para estar a tu lado</p>
+      </figcaption>
+    </a>
+  </figure>
+  <figure class="col-md-3 col-sm-3 col-xs-12 ">
+    <a href="#">
+      <img class="img" src="/images/12.jpg" height="310" width="310" alt="" />
+      <figcaption>
+      <h2>Y tambien</h2>
+      <p>Eres Mi inspiracion</p>
+      </figcaption>
+    </a>
+  </figure>
+</div>
+<form role="form" id="contact" action="/question/validate" method="post">
+  <h1>Te Amo con Todo El Corazon</h1>
+  <div class="form-group">
+    <p><input type="text" class="form-control" name="question1" placeholder="¿Cual es tu nombre?" required></p>
+    <p><input type="text" class="form-control" name="question2" placeholder="¿Que dia de mayo es especial para ti?" required></p>
+    <p><input type="text" class="form-control" name="question3" placeholder="¿Como se Llama Tu novio?" required></p>
+    <p><input type="text" class="form-control" name="question4" placeholder="¿Cuantos meses llevan juntos?" required></p>
+    <button type="submit" class="form-control btn btn-default submit">Submit</button>
+  </div>
+</form>
